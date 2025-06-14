@@ -27,7 +27,7 @@ public class ModCreativeModTabs {
     .build());
 
     public static final RegistryObject<CreativeModeTab> CONTRA_BLOCKS = CREATIVE_MODE_TABS.register("contra_blocks", 
-    () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METHBOX.get()))
+    () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COOKEDTRAY.get()))
     .title(Component.translatable("creativetab.contra_blocks"))
     .displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModItems.COOKEDTRAY.get());
