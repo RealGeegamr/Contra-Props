@@ -9,6 +9,8 @@
     "item.contraprops.hydrogen_chloride": "Hydrogen Chloride",
     "item.contraprops.muriaticacid": "Muriatic Acid",
 
+    "block.contraprops.meth_fridge": "Meth Fridge",
+
     "creativetab.contra_items": "Contra Items",
     "creativetab.contra_blocks": "Contra Blocks"
 }

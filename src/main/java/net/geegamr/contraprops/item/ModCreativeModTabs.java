@@ -1,6 +1,7 @@
 package net.geegamr.contraprops.item;
 
 import net.geegamr.contraprops.contraprops;
+import net.geegamr.contraprops.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,7 +34,7 @@ public class ModCreativeModTabs {
     () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COOKEDTRAY.get()))
     .title(Component.translatable("creativetab.contra_blocks"))
     .displayItems((pParameters, pOutput) -> {
-        pOutput.accept(ModItems.COOKEDTRAY.get());
+        pOutput.accept(ModBlocks.METH_FRIDGE.get());
     })
     .build());
 

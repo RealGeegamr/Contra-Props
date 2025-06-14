@@ -2,6 +2,7 @@ package net.geegamr.contraprops;
 
 import com.mojang.logging.LogUtils;
 
+import net.geegamr.contraprops.block.ModBlocks;
 import net.geegamr.contraprops.item.ModCreativeModTabs;
 import net.geegamr.contraprops.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -18,10 +19,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
+
 @Mod(contraprops.MODID)
 public class contraprops
 {
     public static final String MODID = "contraprops";
+
     @SuppressWarnings("unused")
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -32,6 +35,7 @@ public class contraprops
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
