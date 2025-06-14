@@ -1,5 +1,11 @@
 {
     "item.contraprops.meth_box": "Meth Box",
+    "item.contraprops.chemicals": "Chemical",
+    "item.contraprops.meth_tray_uncooked": "Uncooked Meth Tray",
+    "item.contraprops.meth_tray_empty": "Empty Tray",
+    "item.contraprops.meth_tray_cooked": "Cooked Meth Tray",
+    "item.contraprops.joint": "Joint",
 
-    "creativetab.contra_tab": "Contra"
+    "creativetab.contra_items": "Contra Items",
+    "creativetab.contra_blocks": "Contra Blocks"
 }

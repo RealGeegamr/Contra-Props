@@ -15,6 +15,24 @@ public class ModItems {
     () -> new Item(new Item.Properties())
 );
 
+    public static final RegistryObject<Item> CHEMICAL = ITEMS.register("chemicals",
+    () -> new Item(new Item.Properties())
+);
+
+    public static final RegistryObject<Item> UNCOOKEDTRAY = ITEMS.register("meth_tray_uncooked",
+    () -> new Item(new Item.Properties())
+);
+
+    public static final RegistryObject<Item> EMPTYTRAY = ITEMS.register("meth_tray_empty",
+    () -> new Item(new Item.Properties())
+);
+
+    public static final RegistryObject<Item> COOKEDTRAY = ITEMS.register("meth_tray_cooked",
+    () -> new Item(new Item.Properties())
+);
+
+    public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
+    () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

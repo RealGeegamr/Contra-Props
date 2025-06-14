@@ -13,11 +13,24 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, contraprops.MODID);
 
-    public static final RegistryObject<CreativeModeTab> CONTRA_TAB = CREATIVE_MODE_TABS.register("contra_tab", 
+    public static final RegistryObject<CreativeModeTab> CONTRA_TAB = CREATIVE_MODE_TABS.register("contra_items", 
     () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METHBOX.get()))
-    .title(Component.translatable("creativetab.contra_tab"))
+    .title(Component.translatable("creativetab.contra_items"))
     .displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModItems.METHBOX.get());
+        pOutput.accept(ModItems.CHEMICAL.get());
+        pOutput.accept(ModItems.EMPTYTRAY.get());
+        pOutput.accept(ModItems.UNCOOKEDTRAY.get());
+        pOutput.accept(ModItems.COOKEDTRAY.get());
+        pOutput.accept(ModItems.JOINT.get());
+    })
+    .build());
+
+    public static final RegistryObject<CreativeModeTab> CONTRA_BLOCKS = CREATIVE_MODE_TABS.register("contra_blocks", 
+    () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.METHBOX.get()))
+    .title(Component.translatable("creativetab.contra_blocks"))
+    .displayItems((pParameters, pOutput) -> {
+        pOutput.accept(ModItems.COOKEDTRAY.get());
     })
     .build());
 
