@@ -2,9 +2,18 @@
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "automatic",
     "cSpell.words": [
+        "Behaviour",
+        "Blockbench",
         "contraprops",
+        "creativetab",
+        "Extior",
+        "firstperson",
         "geegamr",
+        "lefthand",
         "MODID",
-        "msys"
+        "msys",
+        "muriaticacid",
+        "righthand",
+        "thirdperson"
     ]
 }

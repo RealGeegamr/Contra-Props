@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "categroy": "misc",
+    "pattern":[
+        " a ",
+        "aba",
+        " a "
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:paper"
+        },
+        "b": {
+            "item": "contraprops:weed"
+        }
+    },
+    "result": {
+        "item": "contraprops:joint",
+        "count": 1
+    }
+}

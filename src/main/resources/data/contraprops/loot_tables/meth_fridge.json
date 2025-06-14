@@ -1,6 +1,6 @@
 {
 "type": "minecraft:block",
-"random_sequence": "working_contra_items:blocks/meth_fridge",
+"random_sequence": "contraprops:blocks/meth_fridge",
 "pools": [
     {
     "rolls": 1.0,
@@ -12,7 +12,7 @@
     "entries": [
         {
             "type": "minecraft:item",
-            "name": "working_contra_items:meth_fridge"
+            "name": "contraprops:meth_fridge"
         }
             ]
         }

@@ -8,6 +8,7 @@
 		"3": "contraprops:block/shelf",
 		"particle": "contraprops:block/door"
 	},
+	"render_type": "minecraft:translucent",
 	"elements": [
 		{
 			"from": [4, 2, 4],
