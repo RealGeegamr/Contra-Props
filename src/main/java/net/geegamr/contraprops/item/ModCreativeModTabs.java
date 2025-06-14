@@ -23,6 +23,9 @@ public class ModCreativeModTabs {
         pOutput.accept(ModItems.UNCOOKEDTRAY.get());
         pOutput.accept(ModItems.COOKEDTRAY.get());
         pOutput.accept(ModItems.JOINT.get());
+        pOutput.accept(ModItems.CAUSTICSODA.get());
+        pOutput.accept(ModItems.HYDROGENCHLORIDE.get());
+        pOutput.accept(ModItems.MURIATICACID.get());
     })
     .build());
 

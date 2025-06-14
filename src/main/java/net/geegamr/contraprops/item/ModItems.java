@@ -34,6 +34,17 @@ public class ModItems {
     public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
     () -> new Item(new Item.Properties()));
 
+        public static final RegistryObject<Item> CAUSTICSODA = ITEMS.register("caustic_soda",
+    () -> new Item(new Item.Properties())
+);
+
+    public static final RegistryObject<Item> HYDROGENCHLORIDE = ITEMS.register("hydrogen_chloride",
+    () -> new Item(new Item.Properties())
+);
+
+    public static final RegistryObject<Item> MURIATICACID = ITEMS.register("muriaticacid",
+    () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
