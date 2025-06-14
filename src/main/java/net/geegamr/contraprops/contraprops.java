@@ -1,6 +1,8 @@
 package net.geegamr.contraprops;
 
 import com.mojang.logging.LogUtils;
+
+import net.geegamr.contraprops.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -29,30 +31,34 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@SuppressWarnings("unused")
 @Mod(contraprops.MODID)
 public class contraprops
 {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "contraprops";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public contraprops(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
 
         MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::addCreative);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)  {
     }
 
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.METHBOX);
+        }
+    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
