@@ -30,8 +30,8 @@ public class ModCreativeModTabs {
         pOutput.accept(ModItems.HYDROGENCHLORIDE.get());
         pOutput.accept(ModItems.MURIATICACID.get());
         pOutput.accept(ModItems.WATER_BOTTLE.get());
-        pOutput.accept(ModItems.ICE_PACK.get());
         pOutput.accept(ModItems.PAPPER_BAG.get());
+        pOutput.accept(ModItems.ICE_PACK.get());
     })
     .build());
 
@@ -41,6 +41,7 @@ public class ModCreativeModTabs {
     .title(Component.translatable("creativetab.contra_blocks"))
     .displayItems((pParameters, pOutput) -> {
         pOutput.accept(ModBlocks.METH_FRIDGE.get());
+        pOutput.accept(ModBlocks.WEED_PLANT.get());
     })
     .build());
 
