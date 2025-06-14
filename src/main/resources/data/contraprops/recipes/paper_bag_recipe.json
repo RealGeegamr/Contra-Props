@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "a a",
+        "a a",
+        "aaa"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:paper"
+        }
+    },
+    "result": {
+        "item": "contraprops:paper_bag",
+        "count": 1
+    }
+}

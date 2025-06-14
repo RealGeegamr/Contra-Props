@@ -1,0 +1,24 @@
+{
+    "type": "minecraft_shaped",
+    "category": "misc",
+    "pattern": [
+        "aba",
+        "cbc",
+        "aba"
+    ],
+    "key":{
+        "a":{
+            "item": "minecraft:quartz_block"
+        },
+        "b":{
+            "item": "minecraft:light_gray_concrete"
+        },
+        "c":{
+            "item": "contraprops:ice_pack"
+        }
+    },
+    "result": {
+        "item":"contraprops:meth_fridge",
+        "count":1
+    }
+}

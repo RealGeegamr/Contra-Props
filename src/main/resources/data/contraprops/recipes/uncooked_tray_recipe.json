@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "contraprops:caustic_soda"
+        },
+        {
+            "item": "contraprops:muriaticacid"
+        },
+        {
+            "item": "contraprops:hydrogen_chloride"
+        },
+        {
+            "item": "contraprops:empty_meth_tray"
+        }
+    ],
+    "result": {
+        "item": "contraprops:uncooked_meth_tray",
+        "count": 1
+    }
+}

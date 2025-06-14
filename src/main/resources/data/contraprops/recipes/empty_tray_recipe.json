@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "aba",
+        "aaa"
+    ],
+    "key": {
+        "a": {
+            "item": "contraprops:steel"
+        },
+        "b": {
+            "item": "minecraft:iron_block"
+        }
+    },
+    "result": {
+        "item": "contraprops:meth_tray_empty",
+        "count": 3
+    }
+}
