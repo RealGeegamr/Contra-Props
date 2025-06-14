@@ -22,6 +22,7 @@ import org.slf4j.Logger;
 public class contraprops
 {
     public static final String MODID = "contraprops";
+    @SuppressWarnings("unused")
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public contraprops(FMLJavaModLoadingContext context)
