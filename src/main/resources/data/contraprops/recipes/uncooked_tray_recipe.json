@@ -12,11 +12,11 @@
             "item": "contraprops:hydrogen_chloride"
         },
         {
-            "item": "contraprops:empty_meth_tray"
+            "item": "contraprops:meth_tray_empty"
         }
     ],
     "result": {
-        "item": "contraprops:uncooked_meth_tray",
+        "item": "contraprops:meth_tray_uncooked",
         "count": 1
     }
 }

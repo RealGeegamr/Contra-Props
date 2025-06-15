@@ -25,7 +25,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> WEED_PLANT = registerBlock("weed_plant",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
 //End of creating blocks
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
