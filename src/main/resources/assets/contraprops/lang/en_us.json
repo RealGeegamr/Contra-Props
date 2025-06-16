@@ -3,7 +3,6 @@
     "item.contraprops.chemicals": "Chemical",
     "item.contraprops.meth_tray_uncooked": "Uncooked Meth Tray",
     "item.contraprops.meth_tray_empty": "Empty Tray",
-    "item.contraprops.meth_tray_cooked": "Cooked Meth Tray",
     "item.contraprops.joint": "Joint",
     "item.contraprops.caustic_soda": "Caustic Soda",
     "item.contraprops.hydrogen_chloride": "Hydrogen Chloride",
@@ -16,6 +15,7 @@
 
     "block.contraprops.meth_fridge": "Meth Fridge",
     "block.contraprops.weed_plant": "Weed Plant",
+    "block.contraprops.meth_tray_cooked": "Cooked Meth Tray",
 
     "creativetab.contra_items": "Contra Items",
     "creativetab.contra_blocks": "Contra Blocks"

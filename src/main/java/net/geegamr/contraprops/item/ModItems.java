@@ -24,9 +24,6 @@ public class ModItems {
     public static final RegistryObject<Item> EMPTYTRAY = ITEMS.register("meth_tray_empty",
     () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> COOKEDTRAY = ITEMS.register("meth_tray_cooked",
-    () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
     () -> new Item(new Item.Properties()));
 

@@ -23,7 +23,7 @@ public class ModCreativeModTabs {
         pOutput.accept(ModItems.CHEMICAL.get());
         pOutput.accept(ModItems.EMPTYTRAY.get());
         pOutput.accept(ModItems.UNCOOKEDTRAY.get());
-        pOutput.accept(ModItems.COOKEDTRAY.get());
+        pOutput.accept(ModBlocks.COOKEDTRAY.get());
         pOutput.accept(ModItems.JOINT.get());
         pOutput.accept(ModItems.WEED.get());
         pOutput.accept(ModItems.CAUSTICSODA.get());
@@ -40,6 +40,7 @@ public class ModCreativeModTabs {
     () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.METH_FRIDGE.get()))
     .title(Component.translatable("creativetab.contra_blocks"))
     .displayItems((pParameters, pOutput) -> {
+        pOutput.accept(ModBlocks.COOKEDTRAY.get());
         pOutput.accept(ModBlocks.METH_FRIDGE.get());
         pOutput.accept(ModBlocks.WEED_PLANT.get());
     })

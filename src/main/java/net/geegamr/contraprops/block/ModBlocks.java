@@ -1,31 +1,33 @@
 package net.geegamr.contraprops.block;
 
+import java.util.function.Supplier;
+
 import net.geegamr.contraprops.contraprops;
 import net.geegamr.contraprops.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.function.Supplier;
 
-@SuppressWarnings("unused")
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, contraprops.MODID);
 
 //Creating the blocks
     public static final RegistryObject<Block> METH_FRIDGE = registerBlock("meth_fridge",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).destroyTime(1)));
 
     public static final RegistryObject<Block> WEED_PLANT = registerBlock("weed_plant",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> COOKEDTRAY = registerBlock("meth_tray_cooked",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).destroyTime(1)));
 
 //End of creating blocks
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
