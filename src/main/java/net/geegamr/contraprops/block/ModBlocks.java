@@ -21,13 +21,13 @@ public class ModBlocks {
 
 //Creating the blocks
     public static final RegistryObject<Block> METH_FRIDGE = registerBlock("meth_fridge",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).destroyTime(1)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> WEED_PLANT = registerBlock("weed_plant",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
     public static final RegistryObject<Block> COOKEDTRAY = registerBlock("meth_tray_cooked",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).destroyTime(1)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 //End of creating blocks
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

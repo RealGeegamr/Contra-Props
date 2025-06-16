@@ -11,11 +11,11 @@
                 "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "contraprops:meth_fridge"
+                    "name": "contraprops:weed"
                 }
             ],
-                "rolls": 1.0
+                "rolls": 2.0
             }
         ],
-    "random_sequence": "contraprops:blocks/meth_fridge"
+    "random_sequence": "contraprops:blocks/weed_plant"
 }
